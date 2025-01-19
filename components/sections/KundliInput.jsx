@@ -171,7 +171,7 @@ const HoroscopeInput = ({setimg,setInfo,setIns}) => {
             name="timezone"
             value={formData.timezone}
             onChange={handleInputChange}
-            className="bg-transparent border-b border-gray-500 focus:outline-none focus:border-white w-56 mx-2 text-center placeholder-gray-500"
+            className="bg-transparent border-b border-gray-500 focus:outline-none focus:border-white w-56 mx-2 text-center placeholder-gray-500 lg:text-xl text-sm"
           >
             <option value="" disabled>
               Select timezone

@@ -21,18 +21,18 @@ const DailyHoroscope = () => {
       "pisces": "Pisces, a bit of daydreaming could be exactly what you need today. Let your imagination run wild."
     }
   return (
-    <div className="h-screen w-screen bg-[#100821] pt-20 flex flex-col items-center justify-start text-[#d5d2be]" id="daily-horoscope">
+    <div className="h-screen pb-5 w-screen bg-[#100821] pt-20 flex flex-col items-center justify-start text-[#d5d2be]" id="daily-horoscope">
       <motion.div initial={{opacity:0,y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.5,delay:0.5,type:"keyframes"}}>
         <div className="w-full px-10 py-6 border-b border-white text-[#d5d2be]">
-            <h1 className="text-5xl">Today's Horoscope</h1>
+            <h1 className="lg:text-5xl text-4xl">Today's Horoscope</h1>
         </div>
-        <div className="w-full flex items-center justify-center">
-          <div className="flex flex-col w-[50%] border-r items-start justify-start p-6 h-[500px]">
+        <div className="w-full flex lg:flex-row flex-col items-center justify-center">
+          <div className="flex flex-col lg:w-[50%] w-full border-r items-start justify-start p-6 h-[500px]">
             <ZodiacDropdown sign={selectedSign} setsign={setSelectedSign}/>
             <img src={`/images/${selectedSign.toLowerCase()}.png`} alt={selectedSign} className="w-[350px] h-auto self-center mt-10"/>
           </div>
-          <div className="flex w-[50%] items-center justify-center">
-            <p className="text-left text-4xl px-10">
+          <div className="flex lg:w-[50%] w-full items-center justify-center">
+            <p className="text-left lg:text-4xl text-3xl px-10">
               {selectedSign==="aries"&&ZodiacText.aries}
               {selectedSign==="taurus"&&ZodiacText.taurus}
               {selectedSign==="gemini"&&ZodiacText.gemini}

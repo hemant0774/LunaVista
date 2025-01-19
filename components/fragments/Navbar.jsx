@@ -9,7 +9,7 @@ const Navbar = () => {
       <h1 className='text-3xl'>
         LunaVista.
       </h1>
-      <ul className='flex gap-10 items-center justify-center w-fit text-lg'>
+      <ul className='lg:flex gap-10 items-center justify-center w-fit text-lg hidden'>
         <a className='flex items-center gap-3' href='/'>
             <RiHome3Fill className='text-xl'/>
             Home

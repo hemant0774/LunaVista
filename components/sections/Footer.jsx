@@ -4,9 +4,9 @@ import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <div className='w-screen h-fit text-[#d5d2be] flex items-center justify-between px-20 py-10 bg-black' id='footer'>
+    <div className='w-screen h-fit text-[#d5d2be] flex lg:flex-row flex-col items-center justify-between lg:px-20 px-3 py-10 bg-black' id='footer'>
         <div className='flex flex-col'>
-            <h1 className='text-7xl'>
+            <h1 className='lg:text-7xl text-5xl'>
                 Guided by the cosmos,<br /> inspired by you.
             </h1>
             <div className='flex gap-3 text-3xl pt-5'>
@@ -16,23 +16,23 @@ const Footer = () => {
                 <FaYoutube/>
             </div>
         </div>
-        <div>
-            <ul className='flex flex-col gap-2 items-start justify-center w-fit text-lg'>
+        <div className='flex items-center lg:justify-end justify-start lg:w-fit w-full lg:mt-0 mt-10'>
+            <ul className='flex flex-col gap-2 items-start justify-center lg:w-fit text-lg'>
             <li className='text-2xl underline flex items-end'>
                 LunaVista. <MdArrowOutward className='text-4xl'/>
             </li>
-            <li>
+            <a href='/'>
                 Home
-            </li>
-            <li>
+            </a>
+            <a href='#footer'>
                 Contact
-            </li>
-            <li>
+            </a>
+            <a href='#about'>
                 About us
-            </li>
-            <li>
+            </a>
+            <a href='/get-started'>
                 Explore
-            </li>
+            </a>
             </ul>
         </div>
     </div>
