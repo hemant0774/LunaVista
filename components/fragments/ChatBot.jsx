@@ -4,7 +4,7 @@ import Markdown from "react-markdown";
 import { FaSpinner } from "react-icons/fa6";
 
 const Chatbot = () => {
-  const [messages, setMessages] = useState([{ type: "bot", text: "Hello! I am Guru Your Spiritual Guide. Ask Me Something like : What gemstone should i wear if my birthday in on 12/12/2024..." }]);
+  const [messages, setMessages] = useState([{ type: "bot", text: "Hello! I am Guru Your Spiritual Guide. Ask Me Something like : What gemstone should i wear if my birthday in on 12/12/2024 (mm/dd/yyyy)..." }]);
   const [input, setInput] = useState("");
   const [loader, setLoader] = useState(false);
 
